@@ -1,0 +1,7 @@
+How Print a "Hello World" on JAVA?
+
+Public class Example{
+    public statuc void main(String... args) {
+        System.out.printIn("Hello World");
+    } 
+}
