@@ -14,9 +14,18 @@ public class PracticingWithVariables {
 		int division=old/3;
 		
 		System.out.println(division);
-
 		
-
+		double variable1=230.89;
+		int variable1ConverseToInt=(int)variable1; // This example is a cast... We are casting this variable
+		System.out.println(variable1ConverseToInt);
 		
+		long extensiveNumbers=999999999999999999L;
+		short shortNumbers=11233;
+		byte littlesNumbers=122;
+		float littleDecimalNumber=2.5F;
+		
+		double result= variable1 + old;
+		System.out.println(result);
+
 	}
 }
