@@ -15,8 +15,6 @@ public class ExampleScope {
 		}
 		
 		boolean canEnter=age >= 18 && couple;
-		
-		System.out.println("Tha value of de condition is " + couple);
 
 		if (canEnter) {
 			System.out.println("You can enter");
@@ -24,6 +22,8 @@ public class ExampleScope {
 		} else {
 			System.out.println("You cannot enter");
 		}
+		
+		System.out.println("Tha value of de condition is " + couple);
 	}
 	
 }
