@@ -1,21 +1,20 @@
 
-/*public class TestReferenceCustomer {
+public class TestReferenceCustomer {
 	public static void main(String[] args) {
 		Customer jonatan=new Customer();
-		jonatan.name="Jonatan";
-		jonatan.document="36513287";
-		jonatan.phoneNumber="11342134234";
+		jonatan.setName("Jonatan");
+		jonatan.setDocument("36513287");
+		jonatan.setPhoneNumber("11342134234");
 		
 		Account accountOfJonatan= new Account();
 		//accountOfJonatan.agency=50;
-		accountOfJonatan.holderAccount=jonatan;
-		System.out.println(accountOfJonatan.holderAccount.name);
+		//accountOfJonatan.holderAccount=jonatan;
+		//System.out.println(accountOfJonatan.holderAccount.getName());
 
 		
-		//This example generate a null
 		Account accountOfDaniel=new Account();
-//		accountOfDaniel.holderAccount.name="Daniel";
-		System.out.println(accountOfDaniel.holderAccount.name);
+		accountOfDaniel.holderAccount.setName("Daniel");
+		System.out.println(accountOfDaniel.holderAccount.getName());
 		
 //		Account accountOfDaniel=new Account();
 //		accountOfDaniel.holderAccount=new Customer();
@@ -27,4 +26,4 @@
 		
 
 	}
-}*/
+}

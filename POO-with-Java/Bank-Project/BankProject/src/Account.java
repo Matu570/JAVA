@@ -4,7 +4,25 @@ class Account {
 	private double balance;
 	private int agency;
 	private int number;
-	Customer holderAccount=new Customer();
+	private Customer holderAccount = new Customer();
+	
+	private static int total=0;
+
+	public static int getTotal() {
+		return total;
+	}
+
+	public Account(int agency) {
+		if (agency <= 0) {
+			System.out.println("Agency number invalid!");
+			this.agency = 1;
+		} else {
+			this.agency=agency;
+			
+		}
+		total++;
+		System.out.println("A new account has been created here. This is the number " + total);
+	}
 
 	// does not return value
 	public void toDeposit(double amount) {
@@ -29,27 +47,27 @@ class Account {
 		}
 		return false;
 	}
-	
-	public double getBalance(){
+
+	public double getBalance() {
 		return this.balance;
 	}
-	
-	public int getAgency(){
+
+	public int getAgency() {
 		return this.agency;
 	}
-	
-	public void setAgency(int newAgency) {
-		if(newAgency>0) {
-			this.agency=newAgency;
-		} else {
-			System.out.println("The negative values are not allowed");
-		}
-	}
-	
+
+//	public void setAgency(int newAgency) {
+//		if (newAgency > 0) {
+//			this.agency = newAgency;
+//		} else {
+//			System.out.println("The negative values are not allowed");
+//		}
+//	}
+
 	public void setHolderAccount(Customer holderAccount) {
 		this.holderAccount = holderAccount;
 	}
-	
+
 	public Customer getHolderAccount() {
 		return holderAccount;
 	}

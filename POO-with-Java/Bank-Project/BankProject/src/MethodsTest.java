@@ -1,17 +1,17 @@
 
-/*public class MethodsTest {
+public class MethodsTest {
 	public static void main(String[] args) {
 		Account accountOfDiego= new Account();
-		accountOfDiego.balance+=1000;
+		accountOfDiego.toDeposit(1000);
 
 		Account accountOfMatias=new Account();
-		accountOfMatias.balance+=500;
+		accountOfMatias.toDeposit(500);;
 
 		accountOfDiego.transfer(250, accountOfMatias);
 		
 		accountOfDiego.toDeposit(1000);
-		System.out.println(accountOfDiego.balance);
-		System.out.println(accountOfMatias.balance);
+		System.out.println(accountOfDiego.getBalance());
+		System.out.println(accountOfMatias.getBalance());
 
 		
 		
@@ -21,4 +21,4 @@
 
 		
 	}
-}*/
+}
