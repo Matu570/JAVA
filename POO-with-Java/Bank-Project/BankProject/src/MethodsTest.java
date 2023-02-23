@@ -1,5 +1,5 @@
 
-public class MethodsTest {
+/*public class MethodsTest {
 	public static void main(String[] args) {
 		Account accountOfDiego= new Account();
 		accountOfDiego.balance+=1000;
@@ -21,4 +21,4 @@ public class MethodsTest {
 
 		
 	}
-}
+}*/

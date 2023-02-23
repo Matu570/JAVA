@@ -1,5 +1,5 @@
 
-public class TestReference {
+/*public class TestReference {
 	public static void main(String[] args) {
 		
 		Account firstAccount= new Account();
@@ -14,4 +14,4 @@ public class TestReference {
 		System.out.println(firstAccount);
 		System.out.println(secondAccount);
 	}
-}
+}*/

@@ -1,7 +1,9 @@
+
+//public and private are access modificators;
 class Account {
-	double balance;
-	int agency;
-	int number;
+	private double balance;
+	private int agency;
+	private int number;
 	Customer holderAccount=new Customer();
 
 	// does not return value
@@ -26,5 +28,21 @@ class Account {
 			return true;
 		}
 		return false;
+	}
+	
+	public double getBalance(){
+		return this.balance;
+	}
+	
+	public int getAgency(){
+		return this.agency;
+	}
+	
+	public void setAgency(int newAgency) {
+		if(newAgency>0) {
+			this.agency=newAgency;
+		} else {
+			System.out.println("The negative values are not allowed");
+		}
 	}
 }

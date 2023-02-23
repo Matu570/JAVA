@@ -1,5 +1,5 @@
 
-public class CreateAccount {
+/*public class CreateAccount {
 	public static void main(String[] args) {
 		
 		Account firstAccount = new Account();
@@ -15,4 +15,4 @@ public class CreateAccount {
 		System.out.println(firstAccount);
 		System.out.println(secondAccount);
 	}
-}
+}*/

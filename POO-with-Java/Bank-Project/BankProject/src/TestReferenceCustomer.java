@@ -7,7 +7,7 @@ public class TestReferenceCustomer {
 		jonatan.phoneNumber="11342134234";
 		
 		Account accountOfJonatan= new Account();
-		accountOfJonatan.agency=50;
+		//accountOfJonatan.agency=50;
 		accountOfJonatan.holderAccount=jonatan;
 		System.out.println(accountOfJonatan.holderAccount.name);
 
