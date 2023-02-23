@@ -12,7 +12,7 @@ public class TestReferenceCustomer {
 		System.out.println(accountOfJonatan.holderAccount.name);
 
 		
-		//This example generate a error
+		//This example generate a null
 		Account accountOfDaniel=new Account();
 //		accountOfDaniel.holderAccount.name="Daniel";
 		System.out.println(accountOfDaniel.holderAccount.name);
