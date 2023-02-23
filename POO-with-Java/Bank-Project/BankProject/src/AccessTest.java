@@ -8,6 +8,7 @@ public class AccessTest {
 		
 		System.out.println(account.getBalance());
 		System.out.println(account.getAgency());
+		
 
 	}
 }

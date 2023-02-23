@@ -1,5 +1,5 @@
 
-public class TestReferenceCustomer {
+/*public class TestReferenceCustomer {
 	public static void main(String[] args) {
 		Customer jonatan=new Customer();
 		jonatan.name="Jonatan";
@@ -27,4 +27,4 @@ public class TestReferenceCustomer {
 		
 
 	}
-}
+}*/

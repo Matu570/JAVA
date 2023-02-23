@@ -45,4 +45,12 @@ class Account {
 			System.out.println("The negative values are not allowed");
 		}
 	}
+	
+	public void setHolderAccount(Customer holderAccount) {
+		this.holderAccount = holderAccount;
+	}
+	
+	public Customer getHolderAccount() {
+		return holderAccount;
+	}
 }
