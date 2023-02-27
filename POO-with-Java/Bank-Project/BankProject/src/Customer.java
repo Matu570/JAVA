@@ -3,6 +3,7 @@ public class Customer {
 		private String name;
 		private String document;
 		private String phoneNumber;
+		
 		public String getName() {
 			return name;
 		}

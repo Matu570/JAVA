@@ -12,17 +12,13 @@ class Account {
 		return total;
 	}
 
-	public Account(int agency) {
-		if (agency <= 0) {
-			System.out.println("Agency number invalid!");
-			this.agency = 1;
-		} else {
-			this.agency=agency;
-			
-		}
-		total++;
+	public Account(int agency, int number) {
+		this.agency=agency;
+		this.number=number;
 		System.out.println("A new account has been created here. This is the number " + total);
-	}
+		Account.total++;	
+		}
+		
 
 	// does not return value
 	public void toDeposit(double amount) {
