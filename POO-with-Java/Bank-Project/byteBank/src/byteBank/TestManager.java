@@ -11,6 +11,6 @@ public class TestManager {
 		
 	
 		System.out.println(manager.login("AluraOnlineCourses"));
-		System.out.println(manager.getSalary());
+		System.out.println(manager.getBonification());
 	}
 }

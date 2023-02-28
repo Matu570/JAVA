@@ -5,9 +5,9 @@ public class Funcionary {
 	private String documentNumber;
 	private double salary;
 	private int type;
-	
+
 	public Funcionary() {
-		
+
 	}
 
 	public String getName() {
@@ -33,19 +33,9 @@ public class Funcionary {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	
-	public double getBonification() {
-		//If type is = 1 is manager
-		//If type is = 0 is funcionary
-		if (this.type==0) {
-			return this.salary*0.1;
-		} else if (this.type==1){
-			return this.salary;
 
-		} else {
-			return 0;
-		}
-		
+	public double getBonification() {
+		return this.salary * 0.1;
 	}
 
 	public int getType() {
@@ -55,5 +45,5 @@ public class Funcionary {
 	public void setType(int type) {
 		this.type = type;
 	}
-	
+
 }

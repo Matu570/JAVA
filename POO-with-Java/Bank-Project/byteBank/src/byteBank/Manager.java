@@ -11,5 +11,10 @@ public class Manager extends Funcionary{
 	public boolean login(String key) {
 		return key=="AluraOnlineCourses";
 	}
+	
+	//method override
+	public double getBonification() {
+		return super.getSalary() + super.getBonification();
+	}
 }
 
