@@ -1,6 +1,6 @@
 package byteBank;
 
-public class Funcionary {
+public abstract class Funcionary {
 	private String name;
 	private String documentNumber;
 	private double salary;
@@ -42,9 +42,7 @@ public class Funcionary {
 		this.salary = salary;
 	}
 
-	public double getBonification() {
-		return this.salary * 0.05;
-	}
+	public abstract double getBonification();
 
 	public int getType() {
 		return type;

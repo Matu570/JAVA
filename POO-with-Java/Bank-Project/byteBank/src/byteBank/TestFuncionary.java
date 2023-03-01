@@ -2,7 +2,7 @@ package byteBank;
 
 public class TestFuncionary {
 	public static void main(String[] args) {
-		Funcionary matias=new Funcionary();
+		Funcionary matias=new Counter();
 		matias.setName("Matias");
 		matias.setDocumentNumber("34534533");
 		matias.setSalary(2000);

@@ -1,8 +1,8 @@
 package byteBank;
 
 //public and private are access modificators;
-class Account {
-	private double balance;
+public abstract class Account {
+	protected double balance;
 	private int agency;
 	private int number;
 	private Customer holderAccount = new Customer();
@@ -26,9 +26,7 @@ class Account {
 		
 
 	// does not return value
-	public void toDeposit(double amount) {
-		this.balance += amount;
-	}
+	public abstract void toDeposit(double amount);
 
 	// does not return value
 	public boolean withdraw(double amount) {

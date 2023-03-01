@@ -15,7 +15,7 @@ public class Manager extends Funcionary{
 	//method override
 	public double getBonification() {
 		System.out.println("Manager Test");
-		return super.getSalary() + super.getBonification();
+		return super.getSalary() + super.getSalary()*0.05;
 	}
 }
 

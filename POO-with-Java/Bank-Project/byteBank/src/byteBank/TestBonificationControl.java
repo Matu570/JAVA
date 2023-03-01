@@ -3,7 +3,7 @@ package byteBank;
 public class TestBonificationControl {
 	public static void main(String[] args) {
 		
-		Funcionary matias=new Funcionary();
+		Funcionary matias=new Counter();
 		matias.setSalary(2000);
 		
 		Manager ximena= new Manager();

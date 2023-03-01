@@ -10,4 +10,9 @@ public class currentAccount extends Account {
 		double comision=0.2;
 		return super.withdraw(amount + comision);
 	}
+
+	@Override
+	public void toDeposit(double amount) {
+		this.balance += amount;
+	}
 }
