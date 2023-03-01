@@ -5,7 +5,15 @@ public class Funcionary {
 	private String documentNumber;
 	private double salary;
 	private int type;
-
+	/*Try
+	private double add;
+	private double recordSalary(Funcionary funcionary) {
+		this.add=funcionary.getBonification() + this.add;
+		System.out.println("Current calcultation: " + this.add);
+		return this.add;
+	};
+	*/
+	
 	public Funcionary() {
 
 	}
@@ -35,7 +43,7 @@ public class Funcionary {
 	}
 
 	public double getBonification() {
-		return this.salary * 0.1;
+		return this.salary * 0.05;
 	}
 
 	public int getType() {
