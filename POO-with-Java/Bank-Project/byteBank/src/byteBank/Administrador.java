@@ -1,13 +1,10 @@
 package byteBank;
 
-//Is an extension of Funcionary
-public class Manager extends Funcionary implements AuthenticableFuncionary{
+public class Administrador extends Funcionary implements AuthenticableFuncionary {
 	
-	//method override
-	@Override
+	
 	public double getBonification() {
-		System.out.println("Manager Test");
-		return 200;
+		return 0;
 	}
 
 	@Override
@@ -21,5 +18,5 @@ public class Manager extends Funcionary implements AuthenticableFuncionary{
 		// TODO Auto-generated method stub
 		return false;
 	}
-}
 
+}

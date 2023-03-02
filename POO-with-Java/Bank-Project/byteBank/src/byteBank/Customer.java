@@ -1,6 +1,6 @@
 package byteBank;
 
-public class Customer {
+public class Customer implements AuthenticableFuncionary{
 		private String name;
 		private String document;
 		private String phoneNumber;
@@ -22,6 +22,17 @@ public class Customer {
 		}
 		public void setPhoneNumber(String phoneNumber) {
 			this.phoneNumber = phoneNumber;
+		}
+		
+		@Override
+		public void setKey(String key) {
+			// TODO Auto-generated method stub
+			
+		}
+		@Override
+		public boolean login(String key) {
+			// TODO Auto-generated method stub
+			return false;
 		}
 		
 		
