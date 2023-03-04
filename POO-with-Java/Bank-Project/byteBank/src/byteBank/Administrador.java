@@ -2,21 +2,25 @@ package byteBank;
 
 public class Administrador extends Funcionary implements AuthenticableFuncionary {
 	
+	private UsefulClass useful;
+	
+	public Administrador() {
+		this.useful=new UsefulClass();
+	}
 	
 	public double getBonification() {
-		return 0;
+		return  this.getSalary();
 	}
 
 	@Override
 	public void setKey(String key) {
-		// TODO Auto-generated method stub
+		this.useful.setKey(key);;
 		
 	}
 
 	@Override
 	public boolean login(String key) {
-		// TODO Auto-generated method stub
-		return false;
+		return this.useful.login(key);
 	}
 
 }

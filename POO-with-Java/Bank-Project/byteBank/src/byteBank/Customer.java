@@ -5,6 +5,12 @@ public class Customer implements AuthenticableFuncionary{
 		private String document;
 		private String phoneNumber;
 		
+		private UsefulClass useful;
+		
+		public Customer() {
+			this.useful=new UsefulClass();
+		};
+		
 		public String getName() {
 			return name;
 		}
@@ -26,13 +32,12 @@ public class Customer implements AuthenticableFuncionary{
 		
 		@Override
 		public void setKey(String key) {
-			// TODO Auto-generated method stub
+			this.setKey(key);;
 			
 		}
 		@Override
 		public boolean login(String key) {
-			// TODO Auto-generated method stub
-			return false;
+			return this.useful.login(key);
 		}
 		
 		
