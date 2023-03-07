@@ -15,7 +15,8 @@ public class Flow {
 
 	private static void method2() {
 		System.out.println("Start of method2");
-		for (int i = 1; i <= 5; i++) {
+		ArithmeticException ae=new ArithmeticException();
+		/*for (int i = 1; i <= 5; i++) {
 			System.out.println(i);
 
 			try {
@@ -35,7 +36,8 @@ public class Flow {
 			}
 
 		}
-		;
+		;*/
+		
 		System.out.println("End of method2");
 	}
 }
