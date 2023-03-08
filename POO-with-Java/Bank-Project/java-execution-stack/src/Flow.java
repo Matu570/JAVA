@@ -9,13 +9,17 @@ public class Flow {
 
 	private static void method1() {
 		System.out.println("Start of method1");
-		method2();
+		try {
+			method2();
+		}catch (MyException2 me) {
+			me.printStackTrace();
+		}
 		System.out.println("End of method1");
 	}
 
-	private static void method2() {
-		System.out.println("Start of method2");
-		ArithmeticException ae=new ArithmeticException();
+	private static void method2(){
+		System.out.println("Start of method2"); 
+		throw new MyException2("My exception has been throwed");
 		/*for (int i = 1; i <= 5; i++) {
 			System.out.println(i);
 
@@ -38,6 +42,6 @@ public class Flow {
 		}
 		;*/
 		
-		System.out.println("End of method2");
+		//System.out.println("End of method2");
 	}
 }
