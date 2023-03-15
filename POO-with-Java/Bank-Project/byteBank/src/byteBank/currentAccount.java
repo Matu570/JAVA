@@ -6,9 +6,9 @@ public class currentAccount extends Account {
 	};
 	
 	@Override
-	public boolean withdraw(double amount) {
+	public void withdraw(double amount) throws InsufficientBalanceException {
 		double comision=0.2;
-		return super.withdraw(amount + comision);
+		super.withdraw(amount + comision);
 	}
 
 	@Override

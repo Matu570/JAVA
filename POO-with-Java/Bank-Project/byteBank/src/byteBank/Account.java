@@ -6,41 +6,43 @@ public abstract class Account {
 	private int agency;
 	private int number;
 	private Customer holderAccount = new Customer();
-	
-	private static int total=0;
+
+	private static int total = 0;
 
 	public static int getTotal() {
 		return total;
 	}
-	
+
 	public Account() {
-		
+
 	};
-	
+
 	public Account(int agency, int number) {
-		this.agency=agency;
-		this.number=number;
+		this.agency = agency;
+		this.number = number;
 		System.out.println("A new account has been created here. This is the number " + total);
-		Account.total++;	
-		}
-		
+		Account.total++;
+	}
 
 	// does not return value
 	public abstract void toDeposit(double amount);
 
 	// does not return value
-	public boolean withdraw(double amount) {
-		if (this.balance >= amount) {
-			this.balance -= amount;
-			return true;
-		} else {
-			return false;
+	public void withdraw(double amount) throws InsufficientBalanceException {
+		if (this.balance < amount) {
+			throw new InsufficientBalanceException("You have no balance");
 		}
+		this.balance -= amount;
+
 	}
 
 	public boolean transfer(double amount, Account transferTo) {
 		if (this.balance >= amount) {
-			this.withdraw(amount);
+			try {
+				this.withdraw(amount);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			transferTo.toDeposit(amount);
 			return true;
 		}
